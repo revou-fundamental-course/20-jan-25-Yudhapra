@@ -1,0 +1,58 @@
+/* Ini File CSS */
+
+main {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+}
+
+footer {
+    text-align: center;
+}
+
+.main-header {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: antiquewhite;
+    padding: 32px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    color: antiquewhite;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-cadet-blue {
+    background-color: cadetblue;
+}
+
+.result-section {
+    padding: 16px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#result-bmi {
+    font-size: xxx-large;
+    font-family: math;
+}
