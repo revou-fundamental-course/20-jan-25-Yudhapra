@@ -2,16 +2,26 @@
 
 main {
     display: flex;
-    gap: 32px;
+    gap: 65px;
     padding: 32px;
+    font-family: cursive;
 }
 
 footer {
     text-align: center;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 .main-header {
     text-align: center;
+    font-family: cursive;
+    font-size: 0.98rem;
+}
+
+p {
+    font-size: smaller;
+    text-align: justify;
 }
 
 input[type=number] {
@@ -19,40 +29,91 @@ input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
 }
 
 form {
-    background-color: antiquewhite;
+    background-color: #dfefff;
     padding: 32px;
+    border-radius: 8px;
+    /* font-weight: bold; */
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
+}
+
+.input-gender {
+    padding-bottom: 5px;
 }
 
 button {
     border: none;
     padding: 8px;
-    color: antiquewhite;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: cursive;
 }
 
-.bg-black {
-    background-color: black;
+.bg-red {
+    background-color: #ff0000;
 }
 
-.bg-cadet-blue {
-    background-color: cadetblue;
+.bg-red:hover {
+    background-color: #d42323;
+}
+
+.bg-blue {
+    background-color: #0065d2;
+}
+
+.bg-blue:hover {
+    background-color: #007bff;
 }
 
 .result-section {
     padding: 16px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #dfefff;
+    border-radius: 8px;
 }
 
 #result-bmi {
     font-size: xxx-large;
     font-family: math;
+}
+
+.feature {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.feature-list {
+    padding-left: 18px;
+    font-size:  0.9rem;
+    text-align: justify;
+}
+
+html {
+    background-color: #f1fff2;
+}
+
+.result-disease {
+    padding: 16px;
+    text-align: center;
+    background-color: #dfefff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+#disease {
+    font-weight: bold;
+}
+
+#disease2 ul {
+    margin: 0px;
 }
