@@ -27,10 +27,11 @@ p {
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
     box-sizing: border-box;
-    border: 1px solid #8c8c8c;
-    border-radius: 5px;
+    /* border: 1px solid #8c8c8c; */
+    border-radius: 0 5px 5px 0;
+    border: none;
 }
 
 form {
@@ -45,10 +46,10 @@ form {
     flex-direction: column;
     padding-bottom: 15px;
 }
-
+/* 
 .input-gender {
     padding-bottom: 5px;
-}
+} */
 
 button {
     border: none;
@@ -116,4 +117,46 @@ html {
 
 #disease2 ul {
     margin: 0px;
+}
+
+
+/* css untuk icon input */
+.input-group {
+    display: flex;
+    /* align-items: center; */
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+    background-color: #d5d5d5c5;
+    /* padding: 5px; */
+}
+
+.input-group .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: black;
+}
+
+.input-group input {
+    /* border: none; */
+    /* outline: none; */
+    flex: 1;
+    /* font-size: 14px; */
+    /* padding: 8px; */
+    /* background-color: transparent; */
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* memberi jarak */
+.form-group label {
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+.button-group {
+    padding-top: 10px;
 }

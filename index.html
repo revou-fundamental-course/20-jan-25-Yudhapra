@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI by Yudhapra</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,20 +40,29 @@
 
                 <div class="form-group">
                     <label for="input-berat-badan">Berat Badan (kg)</label>
-                    <input type="number" id="input-berat-badan" minlength="2" maxlength="3" min="10" max="999" autofocus required>
+                    <div class="input-group">
+                        <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+                        <input type="number" id="input-berat-badan" minlength="2" maxlength="3" min="10" max="999" autofocus required>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="input-usia">Usia (tahun)</label>
-                    <input type="number" id="input-usia" minlength="2" maxlength="3" min="10" max="999" required>
+                    <div class="input-group">
+                        <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+                        <input type="number" id="input-usia" minlength="2" maxlength="3" min="10" max="999" required>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
-                    <input type="number" id="input-tinggi-badan" minlength="2" maxlength="3" min="40" max="999" required>
+                    <div class="input-group">
+                        <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+                        <input type="number" id="input-tinggi-badan" minlength="2" maxlength="3" min="40" max="999" required>
+                    </div>
                 </div>
 
-                <div>
+                <div class="button-group">
                     <button class="bg-blue">Hitung BMI</button>
                     <button class="bg-red">Reset</button>
                 </div>
