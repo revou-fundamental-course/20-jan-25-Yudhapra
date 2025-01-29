@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI by Yudhapra</title>
+    <!-- Ini untuk meta tag, gunanya untuk memberikan informasi tentang halaman web -->
+    <meta name="description" content="Kalkulator BMI sederhana untuk menghitung indeks massa tubuh Anda. Cari tahu berat badan ideal Anda untuk menjaga kesehatan tubuh.">
+    <meta name="keywords" content="kalkulator bmi, indeks massa tubuh, berat badan ideal, kesehatan tubuh">
+    <meta name="author" content="Yudhapra">
+    <meta name="robots" content="index, follow">
+
+    <!-- Ini untuk menghubungkan file css -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Ini untuk header -->
     <header class="main-header">
         <h1>Kalkulator BMI</h1>
     </header>
@@ -27,17 +35,19 @@
             <!-- Form -->
             <form>
                 <div class="form-group">
-                    <label class="input-gender">Jenis Kelamin</label>
+                    <!-- Ini untuk input jenis kelamin -->
+                    <label class="gender">Jenis Kelamin</label>
                         <div class="radio-group">
                             <label>
-                                <input type="radio" name="input-gender" value="Pria" id="gender-pria" checked> Pria
+                                <input type="radio" name="input-gender" value="pria" id="gender-pria" checked> Pria
                             </label>
                             <label>
-                                <input type="radio" name="input-gender" value="Wanita" id="gender-wanita"> Wanita
+                                <input type="radio" name="input-gender" value="wanita" id="gender-wanita"> Wanita
                             </label>
                         </div>
                 </div>
 
+                <!-- Ini untuk input berat badan -->
                 <div class="form-group">
                     <label for="input-berat-badan">Berat Badan (kg)</label>
                     <div class="input-group">
@@ -46,6 +56,7 @@
                     </div>
                 </div>
 
+                <!-- Ini untuk input usia -->
                 <div class="form-group">
                     <label for="input-usia">Usia (tahun)</label>
                     <div class="input-group">
@@ -54,6 +65,7 @@
                     </div>
                 </div>
 
+                <!-- Ini untuk input tinggi badan -->
                 <div class="form-group">
                     <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
                     <div class="input-group">
@@ -62,9 +74,10 @@
                     </div>
                 </div>
 
+                <!-- Ini group untuk button -->
                 <div class="button-group">
-                    <button class="bg-blue">Hitung BMI</button>
-                    <button class="bg-red">Reset</button>
+                    <button class="bg-blue" type="button" onclick="checkBMI()">Hitung BMI</button>
+                    <button class="bg-red" type="button" onclick="resetForm()">Reset</button>
                 </div>
             </form>
 
@@ -84,7 +97,8 @@
                         </li>
                     </ol>
                 </header>
-                
+
+                <!-- Ini untuk deskripsi aja -->
                 <div>
                     <p>
                         Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
@@ -112,21 +126,18 @@
                     <span id="result-bmi">0</span>
                 </div>
                 <div>
-                    <span id="bmi-category2">Anda memiliki berat badan </span>
+                    <span id="bmi-category2"> <!-- Ini untuk hasil bmi kategori --> </span>
                 </div>
             </section>
 
             <article>
                 <div>
-                    <p>
-                        Hasil BMI diantara -- dan --
+                    <p id="range">
+                        <!-- Ini untuk menampilkan hasil range bmi -->
                     </p>
 
-                    <p>
-                       Anda berada dalam kategori overweight atau berat badan berlebih.
-                       Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.
-
-                       Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.
+                    <p id="desc">
+                        <!-- Ini untuk menampilkan hasil deskripsi bmi -->                       
                     </p>
 
                     <p>
@@ -137,23 +148,26 @@
 
             <section class="result-disease">
                 <header>
-                    <span id="disease">
-                        Beberapa penyakit yang berasal dari kegemukan
+                    <span id="disease1">
+                        <!-- Ini untuk hasil penyakit berdasarkan categori -->
+                        Jaga pola makan dan kesehatan tubuh Anda. Untuk mencegah penyakit, Anda bisa melakukan beberapa hal berikut:<br><br>
                     </span>
                 </header>
                 <span id="disease2">
-                    <ul>Diabetes</ul>
-                    <ul>Hipertensi</ul>
-                    <ul>Sakit Jantung</ul>
-                    <ul>Osteoarthritis</ul>
+                    <!-- Ini untuk hasil macam penyakit -->
+                    olahraga teratur, makan makanan bergizi, dan tidur yang cukup
                 </span>
             </section>
         </section>
     </main>
 
+    <!-- Ini untuk footer -->
     <footer>
         <span>Made with 💖 by Yudhapra @2025</span>
     </footer>
+
+    <!-- Ini untuk menghubungkan file js --> 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

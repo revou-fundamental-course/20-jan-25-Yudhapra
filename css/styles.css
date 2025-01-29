@@ -7,12 +7,14 @@ main {
     font-family: cursive;
 }
 
+/* ini untuk styling footer */
 footer {
     text-align: center;
     font-family: monospace;
     font-size: 15px;
 }
 
+/* ini untuk styling header */
 .main-header {
     text-align: center;
     font-family: cursive;
@@ -24,6 +26,7 @@ p {
     text-align: justify;
 }
 
+/* ini untuk styling form input type number */
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
@@ -34,6 +37,7 @@ input[type=number] {
     border: none;
 }
 
+/* ini untuk styling form input */
 form {
     background-color: #dfefff;
     padding: 32px;
@@ -41,6 +45,7 @@ form {
     /* font-weight: bold; */
 }
 
+/* ini untuk styling form group */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -51,6 +56,7 @@ form {
     padding-bottom: 5px;
 } */
 
+/* ini untuk styling button */
 button {
     border: none;
     padding: 8px;
@@ -59,22 +65,27 @@ button {
     font-family: cursive;
 }
 
+/* ini untuk styling button reset */
 .bg-red {
     background-color: #ff0000;
 }
 
+/* ini untuk styling hover button reset */
 .bg-red:hover {
     background-color: #d42323;
 }
 
+/* ini untuk styling button hitung */
 .bg-blue {
     background-color: #0065d2;
 }
 
+/* ini untuk styling hover button hitung */
 .bg-blue:hover {
     background-color: #007bff;
 }
 
+/* ini untuk styling section hasil */
 .result-section {
     padding: 16px;
     text-align: center;
@@ -82,6 +93,7 @@ button {
     border-radius: 8px;
 }
 
+/* ini untuk styling hasil bmi */
 #result-bmi {
     font-size: xxx-large;
     font-family: math;
@@ -103,6 +115,7 @@ html {
     background-color: #f1fff2;
 }
 
+/* ini untuk styling hasil penyakit */
 .result-disease {
     padding: 16px;
     text-align: center;
@@ -111,7 +124,11 @@ html {
     font-size: 0.9rem;
 }
 
-#disease {
+.result-disease ul{
+    padding-left: 0px;
+}
+
+#disease1 {
     font-weight: bold;
 }
 
@@ -130,6 +147,7 @@ html {
     /* padding: 5px; */
 }
 
+/* css untuk icon input */
 .input-group .icon {
     display: flex;
     align-items: center;
@@ -138,6 +156,7 @@ html {
     color: black;
 }
 
+/* css untuk group input */
 .input-group input {
     /* border: none; */
     /* outline: none; */
@@ -147,6 +166,7 @@ html {
     /* background-color: transparent; */
 }
 
+/* css untuk placeholder */
 .input-group input::placeholder {
     color: #aaa;
 }
@@ -157,6 +177,64 @@ html {
     padding-bottom: 5px;
 }
 
+/* memberi jarak pada button */
 .button-group {
     padding-top: 10px;
+}
+
+
+/* Styling Media Query 768px */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* Styling Media Query 480px */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 16px;
+    }
+    .form-group {
+        padding-bottom: 10px;
+    }
+    button {
+        padding: 5px;
+    }
+    .result-section {
+        padding: 8px;
+    }
+    #result-bmi {
+        font-size: xx-large;
+    }
+    .feature {
+        font-size: 1.2rem;
+    }
+    .feature-list {
+        font-size: 0.8rem;
+    }
+    .result-disease {
+        padding: 8px;
+    }
+    #disease {
+        font-size: 1.2rem;
+    }
+    #disease2 ul {
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* Styling Media Query 340px */
+@media screen and (max-width: 340px) {
+    .result-section {
+        padding: 5px;
+    }
+    .result-disease {
+        padding: 5px;
+    }
+    html {
+        font-size: 70%;
+    }    
 }
