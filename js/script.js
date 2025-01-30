@@ -32,7 +32,7 @@ function checkBMI() {
     } else if (beratBadan > 0 && tinggiBadan > 0 && usia > 0) {
         
         // Menentukan kategori BMI berdasarkan nilai BMI yang sudah dihitung
-    if (bmi < 18.5) {
+        if (bmi < 18.5) {
         bmiCategory = 'Kurus';
         bmiCategory1 = 'Berat badan kurang';
         rangeCategory = 'Hasil BMI < 18.5';
@@ -40,7 +40,7 @@ function checkBMI() {
         diseaseDesc = 'Beberapa penyakit yang berasal dari berat badan kurang antara lain:<br><br>';
         diseaseCategory = '<ul>Osteoporosis</ul><ul>Menstruasi tidak teratur</ul><ul>Menurunnya sistem kekebalan tubuh</ul><ul>Menurunnya massa otot</ul>';
 
-    } else if (bmi >= 18.5 && bmi < 24.9) {
+        } else if (bmi >= 18.5 && bmi < 24.9) {
         bmiCategory = 'Normal';
         bmiCategory1 = 'Berat badan normal';
         rangeCategory = 'Hasil BMI diantara 18.5 dan 24.9';
@@ -48,7 +48,7 @@ function checkBMI() {
         diseaseDesc = 'Beberapa keuntungan yang berasal dari berat badan normal antara lain:<br><br>';
         diseaseCategory = '<ul>Resiko penyakit jantung menurun</ul><ul>Resiko diabetes menurun</ul><ul>Resiko stroke menurun</ul><ul>Resiko kanker menurun</ul>';
 
-    } else if (bmi >= 25 && bmi < 29.9) {
+        } else if (bmi >= 25 && bmi < 29.9) {
         bmiCategory = 'Kegemukan';
         bmiCategory1 = 'Berat badan berlebih';
         rangeCategory = 'Hasil BMI diantara 25 dan 29.9';
@@ -56,14 +56,15 @@ function checkBMI() {
         diseaseDesc = 'Beberapa penyakit yang berasal dari kegemukan antara lain:<br><br>';
         diseaseCategory = '<ul>Diabetes</ul><ul>Hipertensi</ul><ul>Sakit Jantung</ul><ul>Osteoarthritis</ul>';
 
-    } else {
+        } else {
         bmiCategory = 'Obesitas';
         bmiCategory1 = 'Berat badan obesitas';
         rangeCategory = 'Hasil BMI > 30';
         descCategory = 'Anda berada dalam kategori obesitas atau berat badan sangat berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga rutin.<br>Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk mengurangi berat badan hingga batas normal.';
         diseaseDesc = 'Beberapa penyakit yang berasal dari obesitas antara lain:<br><br>';
         diseaseCategory = '<ul>Diabetes Tipe 2</ul><ul>Penyakit Jantung</ul><ul>Stroke</ul><ul>Kanker</ul><ul>Depresi</ul><ul>Apnea tidur</ul><ul>Arthritis</ul>';
-    }}
+        }
+    }
 
     // Untuk menampilkan hasil BMI, status, saran, dan risiko penyakit
     document.getElementById('result-bmi').textContent = bmi.toFixed(1);
@@ -75,7 +76,7 @@ function checkBMI() {
     document.getElementById('disease2').innerHTML = diseaseCategory;
 }
 
-// Fungsi button untuk mereset form
+// Fungsi button untuk mereset form input dan hasil BMI
 function resetForm() {
     document.getElementById('input-berat-badan').value = '';
     document.getElementById('input-tinggi-badan').value = '';
