@@ -4,7 +4,7 @@ main {
     display: flex;
     gap: 65px;
     padding: 32px;
-    font-family: cursive;
+    font-family: Nunito;
 }
 
 /* ini untuk styling footer */
@@ -17,7 +17,7 @@ footer {
 /* ini untuk styling header */
 .main-header {
     text-align: center;
-    font-family: cursive;
+    font-family: Nunito;
     font-size: 0.98rem;
 }
 
@@ -42,7 +42,7 @@ form {
     background-color: #dfefff;
     padding: 32px;
     border-radius: 8px;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 /* ini untuk styling form group */
@@ -62,12 +62,13 @@ button {
     padding: 8px;
     color: #ffffff;
     border-radius: 8px;
-    font-family: cursive;
+    font-family: Nunito;
 }
 
 /* ini untuk styling button reset */
 .bg-red {
     background-color: #ff0000;
+    margin-left: 5px;
 }
 
 /* ini untuk styling hover button reset */
@@ -78,6 +79,7 @@ button {
 /* ini untuk styling button hitung */
 .bg-blue {
     background-color: #0065d2;
+    margin-right: 5px;
 }
 
 /* ini untuk styling hover button hitung */
@@ -180,8 +182,16 @@ html {
 /* memberi jarak pada button */
 .button-group {
     padding-top: 10px;
+    text-align: center;
 }
 
+/* css untuk font nunito */
+.nunito-nun {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
 /* Styling Media Query 768px */
 @media screen and (max-width: 768px) {
