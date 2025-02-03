@@ -1,10 +1,10 @@
-# 🔗 Web Live Demo
+## 🔗 Web Live Demo
 
 https://revou-fundamental-course.github.io/20-jan-25-Yudhapra/
 
 ---
 
-# 🧮 Kalkulator BMI - Proyek HTML, CSS, dan JavaScript 🚀
+## 🧮 Kalkulator BMI - Proyek HTML, CSS, dan JavaScript 🚀
 
 Ini adalah proyek sederhana yang dibangun menggunakan HTML, CSS, dan JavaScript untuk menghitung Indeks Massa Tubuh (BMI) seseorang. BMI adalah metrik yang umum digunakan untuk mengevaluasi apakah berat badan seseorang sehat berdasarkan tinggi badan mereka.
 
