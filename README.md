@@ -37,13 +37,13 @@ Berikut adalah struktur direktori proyek ini:
 <pre>
 20-jan-25-Yudhapra/
 ├── css/
-│   └── styles.css   # File CSS untuk styling
+│   └── styles.css    # File CSS untuk styling
 ├── img/
 │   └── favicon.ico   # Ikon untuk website
 ├── js/
-│   └── script.js   # File JavaScript untuk logika kalkulator
-├── index.html   # File utama HTML
-└── README.md   # Dokumentasi proyek
+│   └── script.js     # File JavaScript untuk logika kalkulator
+├── index.html        # File utama HTML
+└── README.md         # Dokumentasi proyek
 </pre>
 ---
 
@@ -63,7 +63,7 @@ Anda dapat menjalankan proyek ini dengan mudah di lingkungan lokal Anda. Ikuti l
    - Buka file *index.html* di browser favorit Anda (Chrome, Firefox, dll.).
    - Anda juga bisa menggunakan Live Server di VS Code untuk menjalankannya.
 4. **Mulai Program**:
-   - Masukkan berat badan (kg) dan tinggi badan (cm).
+   - Masukkan berat badan (kg), tinggi badan (cm), usia (tahun) dan pilih gender.
    - Klik tombol **Hitung BMI** untuk melihat hasilnya.
 
 **Atau dapat coba gunakan langsung pada web live demo berikut: [Kalkulator BMI](https://revou-fundamental-course.github.io/20-jan-25-Yudhapra/)**
